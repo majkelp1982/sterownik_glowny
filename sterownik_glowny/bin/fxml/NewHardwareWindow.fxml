@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?> 
+<?import javafx.scene.layout.Pane?>
+
+<Pane fx:id="newHardwarePane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="144.0" prefWidth="221.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WindowController.NewHardwareControl">
+   <children>
+      <Label layoutX="14.0" layoutY="35.0" text="Typ" />
+      <Label layoutX="7.0" layoutY="73.0" text="numer" />
+      <ChoiceBox fx:id="choiceTyp" layoutX="47.0" layoutY="31.0" prefHeight="25.0" prefWidth="127.0" />
+      <ChoiceBox fx:id="choiceNumer" layoutX="47.0" layoutY="69.0" prefHeight="25.0" prefWidth="127.0" />
+      <Label layoutX="50.0" layoutY="6.0" text="Zapisz nowy sterownik" />
+      <Button fx:id="buttonDodaj" layoutX="87.0" layoutY="105.0" mnemonicParsing="false" onAction="#buttonDodajOnAction" text="dodaj" />
+   </children>
+</Pane>

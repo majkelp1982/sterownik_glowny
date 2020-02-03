@@ -1,0 +1,277 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.DatePicker?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.control.SplitPane?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.FlowPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.TilePane?>
+<?import javafx.scene.text.Font?>
+
+<StackPane prefHeight="700.0" prefWidth="723.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WindowController.HandModeViewController">
+   <children>
+      <AnchorPane prefHeight="740.0" prefWidth="723.0">
+         <children>
+            <SplitPane dividerPositions="0.14453125" pickOnBounds="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+              <items>
+                <AnchorPane maxWidth="90.0" minHeight="0.0" minWidth="90.0" prefHeight="699.0" prefWidth="90.0" snapToPixel="false">
+                     <children>
+                        <TilePane layoutX="2.0" prefHeight="398.0" prefWidth="116.0">
+                           <children>
+                              <Button fx:id="tileKomfort" disable="true" mnemonicParsing="false" onAction="#tileKomfortOnAction" prefHeight="63.0" prefWidth="106.0" text="Komfort" />
+                              <Button fx:id="tileWentylacja" disable="true" mnemonicParsing="false" onAction="#tileWentylacjaOnAction" prefHeight="63.0" prefWidth="106.0" text="Wentylacja" />
+                              <Button fx:id="tileOgrzewanie" disable="true" mnemonicParsing="false" onAction="#tileOgrzewanieOnAction" prefHeight="63.0" prefWidth="106.0" text="Ogrzewanie" />
+                              <Button fx:id="tileKominek" disable="true" mnemonicParsing="false" onAction="#tileKominekOnAction" prefHeight="63.0" prefWidth="106.0" text="Kominek" />
+                              <Button fx:id="tileOgrod" disable="true" mnemonicParsing="false" onAction="#tileOgrodOnAction" prefHeight="63.0" prefWidth="106.0" text="Ogród" />
+                              <Button fx:id="tileLazienki" disable="true" mnemonicParsing="false" onAction="#tileLazienkiOnAction" prefHeight="63.0" prefWidth="106.0" text="Łazienki" />
+                              <Button fx:id="tilePogoda" disable="true" mnemonicParsing="false" onAction="#tilePogodaOnAction" prefHeight="63.0" prefWidth="106.0" text="Pogoda" />
+                              <Button fx:id="tileAlarm" disable="true" mnemonicParsing="false" onAction="#tileAlarmOnAction" prefHeight="63.0" prefWidth="106.0" text="Alarm" />
+                              <Button fx:id="tileOgrzewanie2" disable="true" mnemonicParsing="false" prefHeight="63.0" prefWidth="106.0" text="Kominek" />
+                              <Button fx:id="tileWykresy" mnemonicParsing="false" onAction="#tileWykresyOnAction" prefHeight="63.0" prefWidth="106.0" text="Wykresy" />
+                              <Button fx:id="tileHardware" mnemonicParsing="false" onAction="#tileHardwareOnAction" prefHeight="63.0" prefWidth="106.0" text="Hardware" />
+                           </children>
+                        </TilePane>
+                     </children>
+                  </AnchorPane>
+                <AnchorPane prefHeight="693.0" prefWidth="623.0">
+                     <children>
+                        <AnchorPane fx:id="paneKomfort" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="218.0" prefWidth="673.0" />
+                              <Label fx:id="comfLabZone0" layoutX="25.0" layoutY="20.0" text="Zone 0" />
+                              <Label fx:id="comfLabZone1" layoutX="25.0" layoutY="40.0" text="Zone 1" />
+                              <Label fx:id="comfLabZone2" layoutX="25.0" layoutY="60.0" text="Zone 2" />
+                              <Label fx:id="comfLabZone3" layoutX="25.0" layoutY="80.0" text="Zone 3" />
+                              <Label fx:id="comfLabZone4" layoutX="25.0" layoutY="100.0" text="Zone 4" />
+                              <Label fx:id="comfLabZone5" layoutX="25.0" layoutY="120.0" text="Zone 5" />
+                              <Label fx:id="comfLabZone6" layoutX="25.0" layoutY="140.0" text="Zone 6" />
+                              <Slider fx:id="comfSliderReqZ0" blockIncrement="1.0" layoutX="244.0" layoutY="21.0" max="56.0" maxHeight="14.0" min="36.0" prefHeight="14.0" prefWidth="49.0" value="44.0" />
+                              <Label fx:id="comfLabReqTempZ0" layoutX="205.0" layoutY="20.0" text="000000" />
+                              <Slider fx:id="comfSliderReqZ1" blockIncrement="1.0" layoutX="244.0" layoutY="41.0" max="56.0" maxHeight="14.0" min="36.0" prefHeight="14.0" prefWidth="49.0" value="44.0" />
+                              <Label fx:id="comfLabReqTempZ1" layoutX="205.0" layoutY="40.0" text="000000" />
+                              <Slider fx:id="comfSliderReqZ2" blockIncrement="1.0" layoutX="244.0" layoutY="61.0" max="56.0" maxHeight="14.0" min="36.0" prefHeight="14.0" prefWidth="49.0" value="44.0" />
+                              <Label fx:id="comfLabReqTempZ2" layoutX="205.0" layoutY="60.0" text="000000" />
+                              <Slider fx:id="comfSliderReqZ3" blockIncrement="1.0" layoutX="244.0" layoutY="81.0" max="56.0" maxHeight="14.0" min="36.0" prefHeight="14.0" prefWidth="49.0" value="44.0" />
+                              <Label fx:id="comfLabReqTempZ3" layoutX="205.0" layoutY="80.0" text="000000" />
+                              <Slider fx:id="comfSliderReqZ4" blockIncrement="1.0" layoutX="244.0" layoutY="101.0" max="56.0" maxHeight="14.0" min="36.0" prefHeight="14.0" prefWidth="49.0" value="44.0" />
+                              <Label fx:id="comfLabReqTempZ4" layoutX="205.0" layoutY="100.0" text="000000" />
+                              <Slider fx:id="comfSliderReqZ5" blockIncrement="1.0" layoutX="244.0" layoutY="121.0" max="56.0" maxHeight="14.0" min="36.0" prefHeight="14.0" prefWidth="49.0" value="44.0" />
+                              <Label fx:id="comfLabReqTempZ5" layoutX="205.0" layoutY="120.0" text="000000" />
+                              <Slider fx:id="comfSliderReqZ6" blockIncrement="1.0" layoutX="244.0" layoutY="141.0" max="56.0" maxHeight="14.0" min="36.0" prefHeight="14.0" prefWidth="49.0" value="44.0" />
+                              <Label fx:id="comfLabReqTempZ6" layoutX="205.0" layoutY="140.0" text="000000" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="paneWentylacja" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <FlowPane fx:id="ventFlowPane0" layoutY="50.0" prefHeight="26.0" prefWidth="653.0" AnchorPane.bottomAnchor="662.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="10.0" />
+                              <FlowPane fx:id="ventFlowPane12" layoutX="10.0" layoutY="152.0" prefHeight="26.0" prefWidth="653.0" AnchorPane.bottomAnchor="632.0" AnchorPane.leftAnchor="10.0" AnchorPane.rightAnchor="10.0" AnchorPane.topAnchor="40.0" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="paneOgrzewanie" layoutX="1.0" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Pane layoutX="240.0" layoutY="170.0" prefHeight="117.0" prefWidth="116.0">
+                                 <children>
+                                    <Label layoutX="37.0" text="Bufory" />
+                                    <Label layoutY="20.0" text="CO góra" />
+                                    <Label layoutY="35.0" text="CO środek" />
+                                    <Label fx:id="heatLabTBufCOMid" layoutX="70.0" layoutY="35.0" text="000000" />
+                                    <Label layoutY="50.0" text="CO dół" />
+                                    <Label fx:id="heatLabTBufCOLow" layoutX="70.0" layoutY="50.0" text="000000" />
+                                    <Label layoutY="70.0" text="CWU góra" />
+                                    <Label fx:id="heatLabTBufCWUHi" layoutX="70.0" layoutY="70.0" text="000000" />
+                                    <Label layoutY="85.0" text="CWU środek" />
+                                    <Label fx:id="heatLabTBufCWUMid" layoutX="70.0" layoutY="85.0" text="000000" />
+                                    <Label layoutY="100.0" text="CWU dół" />
+                                    <Label fx:id="heatLabTBufCWULow" layoutX="70.0" layoutY="100.0" text="000000" />
+                                    <Label fx:id="heatLabTBufCOHi" layoutX="70.0" layoutY="20.0" text="000000" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="240.0" layoutY="300.0" prefHeight="86.0" prefWidth="116.0">
+                                 <children>
+                                    <Label layoutX="24.0" text="Podłogówka" />
+                                    <Label layoutY="15.0" text="Rozdzielacze" />
+                                    <Label layoutX="35.0" layoutY="35.0" text="Powroty" />
+                                    <Label fx:id="heatLabTdistributor" layoutX="70.0" layoutY="15.0" text="000000" />
+                                    <Label layoutY="50.0" text="parter" />
+                                    <Label layoutY="65.0" text="piętro" />
+                                    <Label fx:id="heatLabTReturnFloor0" layoutX="70.0" layoutY="50.0" text="000000" />
+                                    <Label fx:id="heatLabTReturnFloor1" layoutX="70.0" layoutY="65.0" text="000000" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="240.0" layoutY="70.0" prefHeight="86.0" prefWidth="116.0">
+                                 <children>
+                                    <Label text="Temperatury główne" />
+                                    <Label layoutY="20.0" text="Źródła" />
+                                    <Label layoutY="35.0" text="Powrót" />
+                                    <Label layoutY="50.0" text="Kominek" />
+                                    <Label fx:id="heatLabTsource" layoutX="70.0" layoutY="20.0" text="000000" />
+                                    <Label fx:id="heatLabTReturn" layoutX="70.0" layoutY="35.0" text="000000" />
+                                    <Label fx:id="heatLabTFirePlace" layoutX="70.0" layoutY="50.0" text="000000" />
+                                    <Label layoutY="65.0" text="Kolektor" />
+                                    <Label fx:id="heatLabTGround" layoutX="70.0" layoutY="65.0" text="000000" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="62.0" layoutY="50.0" prefHeight="117.0" prefWidth="98.0">
+                                 <children>
+                                    <Label layoutX="7.0" text="TRYB PRACY">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Button fx:id="heatBcheap" layoutX="4.0" layoutY="20.0" mnemonicParsing="false" onMouseClicked="#heatBcheapOnClick" text="tylko taryfa II" />
+                                    <Button fx:id="heatBheating" layoutX="7.0" layoutY="50.0" mnemonicParsing="false" onMouseClicked="#heatBheatingOnClick" text="ogrzewanie" />
+                                    <Button fx:id="heatBantilegionellia" layoutX="3.0" layoutY="80.0" mnemonicParsing="false" onMouseClicked="#heatBantilegionelliaOnClick" text="gorąca woda" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="41.0" layoutY="188.0" prefHeight="56.0" prefWidth="141.0">
+                                 <children>
+                                    <Label layoutX="28.0" text="USTAWIENIA">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Slider fx:id="heatSliderReqCO" blockIncrement="1.0" layoutX="75.0" layoutY="20.0" max="90.0" min="70.0" prefHeight="14.0" prefWidth="65.0" value="70.0" />
+                                    <Label layoutY="20.0" text="CO" />
+                                    <Label fx:id="heatLabReqCO" layoutX="30.0" layoutY="20.0" text="000000" />
+                                    <Slider fx:id="heatSliderReqCWU" blockIncrement="1.0" layoutX="75.0" layoutY="35.0" max="110.0" min="80.0" prefHeight="14.0" prefWidth="65.0" value="80.0" />
+                                    <Label layoutY="35.0" text="CWU" />
+                                    <Label fx:id="heatLabReqCWU" layoutX="30.0" layoutY="35.0" text="000000" />
+                                 </children>
+                              </Pane>
+                              <Pane layoutX="41.0" layoutY="276.0" prefHeight="149.0" prefWidth="181.0">
+                                 <children>
+                                    <Label layoutX="40.0" text="STATUS">
+                                       <font>
+                                          <Font size="14.0" />
+                                       </font>
+                                    </Label>
+                                    <Label layoutY="20.0" text="Zródło ciepła" />
+                                    <Label layoutY="35.0" text="Bypass" />
+                                    <Label fx:id="heatLab3way" layoutX="80.0" layoutY="50.0" text="3way" />
+                                    <Label layoutY="102.0" text="Strefy" />
+                                    <Label layoutY="65.0" text="Pompy" />
+                                    <Label fx:id="heatLabPumpHouse" layoutX="80.0" layoutY="65.0" text="dom" />
+                                    <Label fx:id="heatLabPumpGround" layoutX="129.0" layoutY="65.0" prefHeight="17.0" prefWidth="36.0" text="ziemia" />
+                                    <Label fx:id="heatLabPC" layoutX="110.0" layoutY="65.0" text="PC" />
+                                    <Label fx:id="heatLabSource" layoutX="80.0" layoutY="20.0" text="zrodlo" />
+                                    <Label layoutY="50.0" text="Kierunek" />
+                                    <Label fx:id="heatLabBypass" layoutX="80.0" layoutY="35.0" text="bp" />
+                                    <Pane layoutX="24.0" layoutY="81.0" prefHeight="56.0" prefWidth="167.0">
+                                       <children>
+                                          <Label fx:id="heatLabZ2" layoutX="40.0" layoutY="20.0" rotate="270.0" text="Laz.dol" />
+                                          <Label fx:id="heatLabZ4" layoutX="80.0" layoutY="20.0" rotate="270.0" text="Natalia" />
+                                          <Label fx:id="heatLabZ0" contentDisplay="BOTTOM" layoutY="20.0" prefHeight="17.0" prefWidth="37.0" rotate="270.0" text="Salon" textAlignment="JUSTIFY" textOverrun="CLIP">
+                                             <cursor>
+                                                <Cursor fx:constant="DEFAULT" />
+                                             </cursor>
+                                          </Label>
+                                          <Label fx:id="heatLabZ1" layoutX="20.0" layoutY="20.0" rotate="270.0" text="Pralnia" textAlignment="CENTER" />
+                                          <Label fx:id="heatLabZ3" layoutX="60.0" layoutY="20.0" rotate="270.0" text="Rodzice" />
+                                          <Label fx:id="heatLabZ5" layoutX="100.0" layoutY="20.0" rotate="270.0" text="Karolina" />
+                                          <Label fx:id="heatLabZ6" layoutX="120.0" layoutY="20.0" rotate="270.0" text="Laz.gora" textAlignment="CENTER" />
+                                       </children>
+                                    </Pane>
+                                 </children>
+                              </Pane>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="paneKominek" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="180.0" prefWidth="368.0" text="KOMINEK">
+                                 <font>
+                                    <Font size="55.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="paneOgrod" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="180.0" prefWidth="368.0" text="OGROD">
+                                 <font>
+                                    <Font size="55.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="paneLazienki" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="180.0" prefWidth="368.0" text="LAZIENKI">
+                                 <font>
+                                    <Font size="55.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="panePogoda" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="180.0" prefWidth="368.0" text="POGODA">
+                                 <font>
+                                    <Font size="55.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="paneAlarm" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="180.0" prefWidth="368.0" text="ALARM">
+                                 <font>
+                                    <Font size="55.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="paneKominek" layoutX="10.0" layoutY="10.0" prefHeight="200.0" prefWidth="200.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Label prefHeight="180.0" prefWidth="368.0" text="KOMINEK">
+                                 <font>
+                                    <Font size="55.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="paneWykresy" prefHeight="698.0" prefWidth="623.0" visible="false" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <SplitPane fx:id="splitPane" cacheShape="false" centerShape="false" focusTraversable="false" nodeOrientation="LEFT_TO_RIGHT" orientation="VERTICAL" prefHeight="647.0" prefWidth="623.0" scaleShape="false" AnchorPane.bottomAnchor="38.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <DatePicker fx:id="datePickerFrom" layoutX="14.0" layoutY="654.0" prefHeight="26.0" prefWidth="100.0" AnchorPane.bottomAnchor="5.0" AnchorPane.leftAnchor="5.0" />
+                              <Button fx:id="buttonZarzadzaj" layoutX="274.0" layoutY="663.0" mnemonicParsing="false" onMouseClicked="#buttonZarzadzajClick" text="Zarządzaj" AnchorPane.bottomAnchor="2.599999999999909" AnchorPane.leftAnchor="274.0" AnchorPane.rightAnchor="274.0000000000001" />
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane fx:id="paneHardware" prefHeight="698.0" prefWidth="674.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                           <children>
+                              <Button fx:id="buttonNewHardware" mnemonicParsing="false" onMouseClicked="#buttonNewHardwareClick" text="Nowy moduł" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0" />
+                              <TableView fx:id="tableViewModules" layoutY="41.0" prefHeight="660.0" prefWidth="674.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="41.0">
+                                 <columns>
+                                    <TableColumn fx:id="tableColumnTyp" maxWidth="500.0" prefWidth="24.0" text="typ" />
+                                    <TableColumn fx:id="tableColumnNumer" prefWidth="42.0" text="numer" />
+                                    <TableColumn fx:id="tableColumnNazwa" text="nazwa" />
+                                    <TableColumn fx:id="tableColumnBlad" prefWidth="35.0" text="błąd" />
+                                    <TableColumn fx:id="tableColumnIP1" minWidth="40.0" prefWidth="25.0" text="IP1" />
+                                    <TableColumn fx:id="tableColumnIP2" minWidth="40.0" prefWidth="25.0" text="IP2" />
+                                    <TableColumn fx:id="tableColumnIP3" minWidth="40.0" prefWidth="25.0" text="IP3" />
+                                    <TableColumn fx:id="tableColumnIP4" minWidth="40.0" prefWidth="25.0" text="IP4" />
+                                    <TableColumn fx:id="tableColumnUDP" prefWidth="150.0" text="last UDP" />
+                                    <TableColumn fx:id="tableColumnDiagnose" prefWidth="150.0" text="last diagnostic" />
+                                 </columns>
+                              </TableView>
+                              <Label layoutX="211.0" layoutY="5.0" text="Lista zarejestrowanych modułów" AnchorPane.leftAnchor="211.0" AnchorPane.rightAnchor="248.2" AnchorPane.topAnchor="5.0">
+                                 <font>
+                                    <Font size="15.0" />
+                                 </font>
+                              </Label>
+                           </children>
+                        </AnchorPane>
+                        <Button fx:id="globalResetButton" mnemonicParsing="false" onMouseClicked="#globalResetButtonClick" text="Global Reset" AnchorPane.bottomAnchor="5.0" AnchorPane.rightAnchor="5.0" />
+                     </children></AnchorPane>
+              </items>
+            </SplitPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

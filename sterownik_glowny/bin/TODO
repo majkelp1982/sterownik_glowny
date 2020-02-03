@@ -1,0 +1,14 @@
+OGOLNE 
+*po uruchomieniu programu Slidery startuja z pozycji default. Powinny dostosowac swoja pozycje to otrzymanej wartosciu z UDP
+*dostosowac Style.css. Przy tym ustawieniu nie wiadomo ktory to button a ktory napis
+
+MODUL KOMFORT
+*zapis do SQL tylko jednego miejsca po przecinku
+
+MODUL OGRZEWANIE
+*przy najechaniu myszk¹ na aktywny button zmienia sie kolor napisu z zielonego na bialy.
+*dopasowac kolory danych w zaleznoscie od tolerancji/ ustawionej wartosci
+
+WYKRESY
+*po uruchomieniu programu wykresy sa na liscie, ale LinChart nie jest synchroniowany
+*tabelka z przyjaznymi nazwami zmiennych np. zone0isTemp -> wyswietla sie Salon

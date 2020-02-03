@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TreeView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.StackPane?>
+
+<StackPane prefHeight="500.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/9.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="WindowController.ChartsManagerController">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <TreeView fx:id="treeView" onMouseClicked="#treeViewClick" prefHeight="800.0" prefWidth="300.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="300.0" AnchorPane.topAnchor="0.0" />
+            <TabPane fx:id="tabPane" layoutX="300.0" prefHeight="800.0" prefWidth="300.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+               <tabs>
+                  <Tab fx:id="tab1" text="Wykres_1">
+                    <content>
+                      <AnchorPane fx:id="anchorPaneChart1" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="600.0">
+                           <children>
+                              <CheckBox fx:id="chart1enabled" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Włączony" AnchorPane.rightAnchor="213.0" AnchorPane.topAnchor="14.0" />
+                           </children>
+                        </AnchorPane>
+                    </content>
+                  </Tab>
+                  <Tab fx:id="tab2" text="Wykres_2">
+                     <content>
+                        <AnchorPane fx:id="anchorPaneChart2" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="600.0">
+                           <children>
+                              <CheckBox fx:id="chart2enabled" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Włączony" AnchorPane.rightAnchor="213.0" AnchorPane.topAnchor="14.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab3" text="Wykres_3">
+                     <content>
+                        <AnchorPane fx:id="anchorPaneChart3" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="600.0">
+                           <children>
+                              <CheckBox fx:id="chart3enabled" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Włączony" AnchorPane.rightAnchor="213.0" AnchorPane.topAnchor="14.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+                  <Tab fx:id="tab4" text="Wykres_4">
+                     <content>
+                        <AnchorPane fx:id="anchorPaneChart4" minHeight="0.0" minWidth="0.0" prefHeight="800.0" prefWidth="600.0">
+                           <children>
+                              <CheckBox fx:id="chart4enabled" layoutX="14.0" layoutY="14.0" mnemonicParsing="false" text="Włączony" AnchorPane.rightAnchor="213.0" AnchorPane.topAnchor="14.0" />
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs></TabPane>
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>
