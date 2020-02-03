@@ -51,8 +51,8 @@ public class EventManager {
 	private boolean controller_Comfort_Available = false;
 	
 	//Controllers	
-	public DataBaseController dataBaseController;// = new DataBaseController(controller_Room, controller_Heating);
-	public UDPcontroller udpController;// = new CANController(dataBaseController);
+	public DataBaseController dataBaseController;
+	public UDPcontroller udpController;
 	
 	public EventManager() throws SQLException {
 		dataBaseController = new DataBaseController();

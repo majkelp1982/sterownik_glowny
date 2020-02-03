@@ -49,7 +49,6 @@ public class DataBaseController {
 		
 		// If connection with database is not possible, exit from program
 		if (connection == null) {
-		//TMP zamist sysout wyslac error window na aplikacji
 		System.out.println("BLAD:SQL - Zestawienie połączenia z bazą danych");
 		System.exit(1);
 		}
@@ -71,7 +70,6 @@ public class DataBaseController {
 			return !connection.isClosed();
 			
 		} catch (Exception e) {
-			//TMP przy braku polaczenia z baza danych nie da sie zapisac danych w SQL. Moze zrobic jakis bufor z licznikiem zeby po odzyskaniu polaczenia wpisac blad na liste ?
 			System.out.println("BLAD:SQL - Brak polaczenia z baza danych");
 			return false;
 		}
@@ -128,7 +126,7 @@ public class DataBaseController {
 				break;
 
 			case 200: // diagnose frame
-				//TMP brakuje ramki diagnostycznej. utworzyc
+				//TMP create diagnostic frame
 				break;
 			}
 		// if last state in Archive table is different, insert new entity
@@ -139,7 +137,7 @@ public class DataBaseController {
 			}
 		}
 		
-		// Data frame from module 5 received. (2-modul kominka z plaszczem wody) 
+		// Data frame from module 5 received. (5-modul kominka z plaszczem wody) 
 		if (controllerTyp == 5) {
 			// get last state of module to compare afterwards if something was change since last update. 
 			getLastValues(temp_Controller_Fireplace,controllerNumber);
@@ -172,7 +170,7 @@ public class DataBaseController {
 				break;
 
 			case 200: // diagnose frame
-				//TMP brakuje ramki diagnostycznej. utworzyc
+				//TMP create diagnostic frame
 				break;
 			}
 			
@@ -245,7 +243,7 @@ public class DataBaseController {
 				break;
 
 			case 200: // diagnose frame
-				//TMP brakuje ramki diagnostycznej. utworzyc
+				//TMP create diagnostic frame
 				controller_Comfort[controllerNumber].diagnosticLastUpdate= getCurrentDate();
 				controller_Comfort[0].setIP1(packetData[3]);
 				controller_Comfort[0].setIP2(packetData[4]);
@@ -269,7 +267,7 @@ public class DataBaseController {
 			
 		}
 			
-			// Data frame from module 10 received. (10-modul komfortu) 
+			// Data frame from module 14 received. (14-modul ogrzewania) 
 			if (controllerTyp == 14) {
 				// get last state of module to compare afterwards if something was change since last update. 
 				getLastValues(temp_Controller_Heating,controllerNumber);
@@ -333,7 +331,7 @@ public class DataBaseController {
 					break;
 					
 				case 200: // diagnose frame
-					//TMP brakuje ramki diagnostycznej. utworzyc
+					//TMP create diagnostic frame
 					controller_Heating[controllerNumber].diagnosticLastUpdate= getCurrentDate();
 					controller_Heating[0].setIP1(packetData[3]);
 					controller_Heating[0].setIP2(packetData[4]);

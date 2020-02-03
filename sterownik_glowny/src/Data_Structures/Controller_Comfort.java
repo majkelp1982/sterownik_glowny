@@ -62,17 +62,6 @@ public class Controller_Comfort extends Data_Structures.Module{
 		}
 		
 		return result;
-		
-//			if ((controller_comfort.zone[i].isTemp != zone[i].isTemp) || (controller_comfort.zone[i].reqTemp != zone[i].reqTemp) || 
-//					(controller_comfort.zone[i].humidity != zone[i].humidity))
-//				temp = true;
-//		if ((controller_comfort.error != error) || (temp))
-//		{			
-//			//Structure's are not the same so return false
-//			return false;
-//		}
-//		else return true;
-
 	}
 	
 	public boolean  isReqZ0UpToDate(){
@@ -149,10 +138,5 @@ public class Controller_Comfort extends Data_Structures.Module{
 	public void initialization_NewValues() {
 		for (int i=0; i<7; i++)
 			zone[i].NVreqTemp = zone[i].reqTemp;
-	}
-
-	
-	public void printData() {
-		//TMP
 	}
 }

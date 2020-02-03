@@ -75,7 +75,7 @@ public class NewHardwareControl {
     	eventManager.dataBaseController.addNewHadware((String) choiceTyp.getValue(), choiceNumer.getValue());//TMPInteger.parseInt((String) choiceNumer.getValue()));
     	setAvailableChoiceNumber();
     	
-    	//TMP po dodaniu nowego sprzetu trzeba estart aplikacji
+    	//TMP restart after new module was added
 		System.exit(0);
     }
 }

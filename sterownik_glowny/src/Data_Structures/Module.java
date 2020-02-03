@@ -138,7 +138,6 @@ public class Module {
 	public boolean cmp(double value1, double value2, double tolerance) {
 		if (Math.abs(value1-value2) > tolerance) {
 			System.out.println("FLOAT FALSE");
-			
 			return false;
 		}
 		else return true;

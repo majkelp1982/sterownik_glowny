@@ -3,7 +3,6 @@ package Communication;
 import java.io.IOException;
 import java.net.DatagramPacket;
 import java.net.DatagramSocket;
-import java.net.Inet4Address;
 import java.net.InetAddress;
 import java.net.SocketException;
 import java.net.UnknownHostException;
@@ -19,11 +18,11 @@ public class UDPcontroller {
     private static byte[] buffer;
     private static int[] packetData;
     int localPort = 6000;
-    private static final int PACKET_SIZE_MODUL_3 = 16;					// length of UDP data from modul 2 "wentylacja"
-    private static final int PACKET_SIZE_MODUL_10 = 31;					// length of UDP data from modul 10 "komfort"
-    private static final int PACKET_SIZE_MODUL_10_DIAG = 7;				// length of UDP diagnose from modul 10 "komfort" 
-    private static final int PACKET_SIZE_MODUL_14 = 21;					// length of UDP data from modul 14 "Ogrzewanie2"
-    private static final int PACKET_SIZE_MODUL_14_DIAG = 8;				// length of UDP diagnose from modul 14 "Ogrzewanie2" 
+    private static final int PACKET_SIZE_MODUL_3 = 16;					// length of UDP data from module 3 "wentylacja"
+    private static final int PACKET_SIZE_MODUL_10 = 31;					// length of UDP data from module 10 "komfort"
+    private static final int PACKET_SIZE_MODUL_10_DIAG = 7;				// length of UDP diagnose from module 10 "komfort" 
+    private static final int PACKET_SIZE_MODUL_14 = 21;					// length of UDP data from module 14 "Ogrzewanie"
+    private static final int PACKET_SIZE_MODUL_14_DIAG = 8;				// length of UDP diagnose from module 14 "Ogrzewanie" 
 	
 	public UDPcontroller(DataBaseController dataBaseController) {
 		this.dataBaseController = dataBaseController;
@@ -78,8 +77,6 @@ public class UDPcontroller {
   		DatagramPacket dp = null;
  
 		try {
-//			dp = new DatagramPacket(packetData, packetData.length, InetAddress.getByName("192.168.0.255"), localPort);
-			
 			//Prepare broadcast address
 			byte[] broadcastAddress = InetAddress.getLocalHost().getAddress();
 			broadcastAddress[3] = (byte)0xff;

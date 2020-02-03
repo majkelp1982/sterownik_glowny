@@ -9,16 +9,6 @@ public class Controller_Vent extends Data_Structures.Module{
 	public Controller_Vent(int moduleTyp, int moduleNo, String moduleName, boolean error, int ip1, int ip2,
 			int ip3, int ip4, Date lastUDP, Date lastDiagnose) {
 		super(moduleTyp, moduleNo, moduleName, error, ip1, ip2, ip3, ip4, lastUDP, lastDiagnose);
-		
-		//SET AFTER POWER UP
-		for (int i=0; i<12; i++)
-			hour[i] = 0;
-		//8:00 - 8:15
-		hour[4] = 128;
-		//16:00-16:30
-		hour[8] = 192; 
-		//20:30-21:00
-		hour[10] = 48;
 	}
 
 	public boolean fanON;

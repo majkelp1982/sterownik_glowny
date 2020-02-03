@@ -49,7 +49,7 @@ public class Main extends Application{
 		if (eventManager.isController_Fireplace_Available()) handModeViewController.setDataStructure(controller_Fireplace);
 		if (eventManager.isController_Vent_Available()) handModeViewController.setDataStructure(controller_Vent);
 		if (eventManager.isController_Comfort_Available()) handModeViewController.setDataStructure(controller_Comfort);
-		//TMP rozszerzyc o kolejne struktury innych pokoi
+		//TMP here extend neu structures 
 		//TODO 
 		
 		handModeViewController.initialize_Menu();

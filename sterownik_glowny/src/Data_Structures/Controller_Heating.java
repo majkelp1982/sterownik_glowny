@@ -173,27 +173,6 @@ public class Controller_Heating extends Data_Structures.Module{
 		if (result) result = cmp(controller_Heating.tPowrotParter,tPowrotParter,1);
 		if (result) result = cmp(controller_Heating.tPowrotPietro,tPowrotPietro,1);		
 		return result;
-/*
- 		if ((controller_Heating.heatSourceActive != heatSourceActive) || (controller_Heating.pump_InHouse != pump_InHouse) || (controller_Heating.pump_UnderGround != pump_UnderGround)
- 
-			|| (controller_Heating.reqHeatingPumpOn != reqHeatingPumpOn) || (controller_Heating.cheapTariffOnly != cheapTariffOnly) || (controller_Heating.heatingActivated != heatingActivated) 
-			|| (controller_Heating.antyLegionellia != antyLegionellia) || (controller_Heating.valve_3way != valve_3way) || (controller_Heating.valve_bypass != valve_bypass)
-			|| (controller_Heating.zone[0] != zone[0]) || (controller_Heating.zone[1] != zone[1]) || (controller_Heating.zone[2] != zone[2]) || (controller_Heating.zone[3] != zone[3])
-			|| (controller_Heating.zone[4] != zone[4]) || (controller_Heating.zone[5] != zone[5]) || (controller_Heating.zone[6] != zone[6])
-			|| (controller_Heating.reqTempBuforCO != reqTempBuforCO) || (controller_Heating.reqTempBuforCWU != reqTempBuforCWU) 
-			|| (controller_Heating.tBuffCOdol != tBuffCOdol) || (controller_Heating.tBuffCOsrodek != tBuffCOsrodek) 
-			|| (controller_Heating.tBuffCOgora != tBuffCOgora) || (controller_Heating.tBuffCWUdol != tBuffCWUdol) 
-			|| (controller_Heating.tBuffCWUsrodek != tBuffCWUsrodek) || (controller_Heating.tBuffCWUgora != tBuffCWUgora) 
-			|| (controller_Heating.tZasilanie != tZasilanie) || (controller_Heating.tPowrot != tPowrot) 
-			|| (controller_Heating.tDolneZrodlo != tDolneZrodlo) || (controller_Heating.tKominek != tKominek) 
-			|| (controller_Heating.tRozdzielacze != tRozdzielacze) || (controller_Heating.tPowrotParter != tPowrotParter) 
-			|| (controller_Heating.tPowrotPietro != tPowrotPietro) || (controller_Heating.error != error))
-		{
-			//Structure's are not the same so return false
-			return false;
-		}
-		else return true;
-*/
 	}
 
 	public void initialization_NewValues() {
@@ -233,7 +212,6 @@ public class Controller_Heating extends Data_Structures.Module{
 		// return false if not all values up to date
 		return !(!isCheapTariffOnlyUpToDate() || !isHeatingActivatedOnUpToDate() || !isAntyLegionelliaOnUpToDate() || !isReqTempBuforCOUpToDate() || !isReqTempBuforCWUUpToDate());
 	}
-
 
 	public void setNVcheapTariffOnly(boolean nVcheapTariffOnly) {
 		NVcheapTariffOnly = nVcheapTariffOnly;
