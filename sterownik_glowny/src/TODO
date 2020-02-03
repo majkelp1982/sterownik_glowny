@@ -1,4 +1,6 @@
 OGOLNE 
+*integracja z GitHub
+
 *po uruchomieniu programu Slidery startuja z pozycji default. Powinny dostosowac swoja pozycje to otrzymanej wartosciu z UDP
 *dostosowac Style.css. Przy tym ustawieniu nie wiadomo ktory to button a ktory napis
 
